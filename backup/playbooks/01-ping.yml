@@ -7,3 +7,4 @@
 - hosts: dev
   tasks:
     - debug: msg="Hello Dev"
+    - debug: msg="Testing edit in file for git"
