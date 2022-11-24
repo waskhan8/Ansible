@@ -1,7 +1,9 @@
 ---
-- hosts: qa
+- hosts: nodes
   tasks:
-    - name: Execute Shell Commands
+    - name: "Check in Shell"
       shell: uname
-      register: uname_result
-    - debug: msg="{{ uname_result.stdout }}"
+      register: Shell_Variable
+    - debug: msg = {{ Shell_Variable.stdout }} 
+
+        
