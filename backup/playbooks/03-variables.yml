@@ -1,5 +1,5 @@
 ---
-- hosts: dev
+- hosts: web
   vars_files: 
     - variables.yml
   vars:
