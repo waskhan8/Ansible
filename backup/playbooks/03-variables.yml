@@ -1,9 +1,10 @@
 ---
 - hosts: dev
-  vars_files:
+  vars_files: 
     - variables.yml
   vars:
-    variable1: "PlayBookValue"
-  tasks:
-    - name: Variable Value
-      debug: msg="Value is {{ variable1 }}"
+    variable1: "Playbook Value"
+  tasks: 
+    - name: Test Variable
+      debug: msg=" Value is {{ variable1 }}"
+
